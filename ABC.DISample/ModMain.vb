@@ -9,7 +9,7 @@ Module ModMain
         Using kernel = New StandardKernel()
 
             kernel.Bind(Function(x)
-                            Return x.FromAssembliesMatching("DART.*").SelectAllClasses().BindAllInterfaces()
+                            Return x.FromAssembliesMatching("ABC.*").SelectAllClasses().BindAllInterfaces()
                         End Function)
 
             kernel.Bind(Function(x)
