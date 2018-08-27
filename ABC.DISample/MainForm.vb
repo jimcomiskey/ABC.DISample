@@ -21,7 +21,13 @@ Public Class MainForm
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Dim subForm = m_FormFactory.Create(Of SubForm)
+        ShowSubForm()
+    End Sub
+    ' public method exposes the button click behavior as a public behavior of the form.
+    ' this could be moved to a Presenter using the Model View Presenter pattern,
+    ' making the Presenter the surface for a testable API.
+    Public Sub ShowSubForm()
+        Dim subForm = m_FormFactory.Create(Of ISubForm)
         subForm.ShowDialog()
     End Sub
 

@@ -9,6 +9,8 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ABC.Clients", "ABC.Clients\
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ABC.DAL", "ABC.DAL\ABC.DAL.vbproj", "{28786E72-52EC-45BC-85D0-A3994517D282}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ABC.DISample.Tests.Unit", "ABC.DISample.Tests.Unit\ABC.DISample.Tests.Unit.vbproj", "{DE521A21-FD78-40BE-98AD-0FAF70F7472D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{28786E72-52EC-45BC-85D0-A3994517D282}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{28786E72-52EC-45BC-85D0-A3994517D282}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{28786E72-52EC-45BC-85D0-A3994517D282}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE521A21-FD78-40BE-98AD-0FAF70F7472D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE521A21-FD78-40BE-98AD-0FAF70F7472D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE521A21-FD78-40BE-98AD-0FAF70F7472D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE521A21-FD78-40BE-98AD-0FAF70F7472D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
