@@ -86,6 +86,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IMessageBoxService.vb" />
     <Compile Include="ISubForm.vb" />
     <Compile Include="MainForm.vb">
       <SubType>Form</SubType>
@@ -95,6 +96,7 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="IFormFactory.vb" />
+    <Compile Include="MessageBoxService.vb" />
     <Compile Include="ModMain.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
