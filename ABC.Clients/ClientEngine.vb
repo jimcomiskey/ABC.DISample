@@ -10,9 +10,13 @@ Public Class ClientEngine
     End Sub
 
     Public Function GetClients() As IEnumerable(Of Client) Implements IClientEngine.GetClients
+
+        Dim dt As DataTable = m_DAL.GetRecordset("select * from CLIENTS")
         Dim col = New List(Of Client)
-        col.Add(New Client() With {.Code = "TST", .Name = "Test Client"})
-        col.Add(New Client() With {.Code = "NOR", .Name = "Wells Fargo"})
+
+        For Each dr As DataRow In dt.Rows
+            col.Add(New Client() With {.Code = dr("CLIENT_CODE").ToString, .Name = dr("CLIENT_NAME").ToString})
+        Next
 
         Return col
     End Function
